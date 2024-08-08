@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button type="button" id="loginBtn">로그인</button>
+<button type="button" id="signupBtn">회원가입</button>
+
+
+</body>
+<script>
+   $(document).ready(function (event){
+       $('#loginBtn').on('click', function (){
+           window.location.href = '/login';
+       })
+       $('#signupBtn').on('click', function (){
+           window.location.href = '/join'
+       })
+   })
+
+</script>
+</html>
